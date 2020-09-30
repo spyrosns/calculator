@@ -35,6 +35,7 @@ public class main : MonoBehaviour
     
     void Update()
     {
+        //ELEGXOS GIA SYNDESH STO DIADIKTYO (APAITEITAI GIA TH METATROPH NOMISMATON)
         if (ConverterObject.active)
         {
             if (Application.internetReachability == NetworkReachability.NotReachable)
@@ -47,7 +48,7 @@ public class main : MonoBehaviour
             }
         }
     }
-
+    //PROSTHIKI ARITHMON KAI PRAKSEON STHN EKSISOSH
     public void AddCharToEquation(string character)
     {
         if (readyToClear == true && (!(character == "+" || character == "-" || character == "*" || character == "/")))
@@ -102,13 +103,13 @@ public class main : MonoBehaviour
             TxtScreen.text = equation;
         }
     }
-
+    //BGAZEI TO APOTELESMA THS PRAKSHS
     public void ShowResult()
     {
         result = evaluteQuestion(equation);
         TxtScreenResult.text = "" + result;
     }
-
+    // ANOIGMA KAI KLEISIMO METATROPEA
     public void OpenCloseConverter()
     {
         readyToClear = true;
@@ -116,7 +117,7 @@ public class main : MonoBehaviour
         ConverterObject.SetActive(!ConverterObject.active);
         TxtConverterFrom.text = TxtScreenResult.text;
     }
-
+    // SYNDESH ME "Fixer.io" KAI APOTELESMA METATROPHS
     public void ShowConversionResult()
     {
         try
@@ -141,7 +142,7 @@ public class main : MonoBehaviour
             rateconversiontext.text = "Rate: -.--";
         }
     }
-
+    // YPOLOGISMOS EKSISOSHS - EPISTREFEI TO APOTELESMA
     public float evaluteQuestion(string question)
     {
         float result = 0;
